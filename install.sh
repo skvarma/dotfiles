@@ -47,7 +47,6 @@ mas install 409789998 # Twitter
 mas install 405772121 # LittleIpsum
 mas install 409203825 # Numbers
 mas install 409201541 # Pages
-mas install 404010395 # TextWrangler
 
 # Make ZSH the default shell environment
 #chsh -s $(which zsh)
@@ -56,5 +55,38 @@ mas install 404010395 # TextWrangler
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
 #mkdir $HOME/Sites
 
+
+# NVM install
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+nvm install --lts
+nvm use --lts
+
+npm install yarn --global
+
+
 # Create a Projects directory
 mkdir $HOME/Projects
+
+npm install --global sfdx-cli
+
+sfdx update
+
+git clone https://github.com/wadewegner/salesforce-cli-zsh-completion.git $HOME/Projects/salesforce-cli-zsh-completion
+
+# Install Visual Studio Code plugins
+code --install-extension salesforce.salesforcedx-vscode-apex
+code --install-extension salesforce.salesforcedx-vscode-apex-debugger
+code --install-extension salesforce.salesforcedx-vscode-lightning
+code --install-extension salesforce.salesforcedx-vscode-core
+code --install-extension salesforce.salesforcedx-vscode
+
+export GOPATH=$HOME/go-workspace
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+
+go get gopkg.in/Netflix-Skunkworks/go-jira.v1/cmd/jira
