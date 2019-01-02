@@ -30,7 +30,7 @@ brew 'vim', args: ['override-system-vi']
 
 # Install Binaries
 #brew 'awscli'
-brew 'java'
+brew cask install java
 brew 'ant'
 brew 'ansible'
 brew 'docker'
@@ -92,7 +92,7 @@ cask 'atom'
 #cask 'transmit'
 cask 'vagrant'
 #cask 'vagrant-manager'
-cask 'virtualbox'
+#cask 'virtualbox'
 #cask 'virtualbox-extension-pack'
 #cask 'visual-studio-code'
 #cask 'vlc'
