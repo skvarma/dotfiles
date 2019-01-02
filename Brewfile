@@ -6,7 +6,7 @@ tap 'caskroom/cask'
 #tap 'caskroom/fonts'
 #tap 'caskroom/versions'
 tap 'homebrew/bundle'
-tap 'homebrew/dupes'
+#tap 'homebrew/dupes'
 #tap 'homebrew/php'
 
 # Install ZSH
@@ -24,12 +24,13 @@ brew 'findutils'
 
 # Install more recent versions of some macOS tools
 brew 'vim', args: ['override-system-vi']
-brew 'homebrew/dupes/grep'
-brew 'homebrew/dupes/openssh'
-brew 'homebrew/dupes/screen'
+#brew 'homebrew/dupes/grep'
+#brew 'homebrew/dupes/openssh'
+#brew 'homebrew/dupes/screen'
 
 # Install Binaries
 #brew 'awscli'
+brew 'java'
 brew 'ant'
 brew 'ansible'
 brew 'docker'
@@ -74,7 +75,7 @@ cask 'atom'
 #cask 'google-chrome'
 #cask 'google-chrome-canary'
 #cask 'google-drive'
-cask 'iterm2'
+#cask 'iterm2'
 #cask 'kaleidoscope'
 #cask 'keystore-explorer'
 #cask 'mysqlworkbench'
@@ -90,10 +91,10 @@ cask 'iterm2'
 #cask 'tower'
 #cask 'transmit'
 cask 'vagrant'
-cask 'vagrant-manager'
+#cask 'vagrant-manager'
 cask 'virtualbox'
 #cask 'virtualbox-extension-pack'
-cask 'visual-studio-code'
+#cask 'visual-studio-code'
 #cask 'vlc'
 
 # Quicklook
