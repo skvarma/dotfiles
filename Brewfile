@@ -3,7 +3,7 @@
 
 # Taps
 tap 'caskroom/cask'
-tap 'homebrew/cask'
+#tap 'homebrew/cask'
 #tap 'caskroom/fonts'
 #tap 'caskroom/versions'
 tap 'homebrew/bundle'
@@ -32,7 +32,7 @@ brew 'vim', args: ['override-system-vi']
 
 # Install Binaries
 #brew 'awscli'
-brew 'java'
+cask 'java'
 brew 'ant'
 brew 'ansible'
 brew 'docker'
