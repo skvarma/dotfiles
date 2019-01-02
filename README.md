@@ -1,4 +1,4 @@
-# Tim’s dotfiles
+# Sid’s dotfiles
 
 ## What Is This Stuff?
 
@@ -59,6 +59,7 @@ Start writing more code!
 
 I borrowed quite a bit from some giants in the dotfiles realm:
 
+* Forked from Tim Ubbens DOT files
 * Github's [dotfiles page](https://dotfiles.github.io/) is an awesome place to start
 * Dries Vints' [blog post](https://driesvints.com/blog/getting-started-with-dotfiles) and [repo](https://github.com/driesvints/dotfiles)
 * Lars Kappert's post on [getting started with dotfiles](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.w1ogcsuu2)
