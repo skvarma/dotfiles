@@ -3,11 +3,13 @@
 
 # Taps
 tap 'caskroom/cask'
+tap 'homebrew/cask'
 #tap 'caskroom/fonts'
 #tap 'caskroom/versions'
 tap 'homebrew/bundle'
 #tap 'homebrew/dupes'
 #tap 'homebrew/php'
+tap 'heroku/homebrew-brew'
 
 # Install ZSH
 brew 'zsh'
@@ -30,7 +32,7 @@ brew 'vim', args: ['override-system-vi']
 
 # Install Binaries
 #brew 'awscli'
-brew cask install java
+brew 'java'
 brew 'ant'
 brew 'ansible'
 brew 'docker'
